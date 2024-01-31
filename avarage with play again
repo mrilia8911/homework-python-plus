@@ -1,4 +1,7 @@
+#start
+#while for making play again on the last codes
 while True:
+        #some prints and inputs
         print("tell your first Lesson Score , plz tell that non-decimal ")
         first = int(input())
         print("tell your second Lesson Score")
@@ -21,12 +24,13 @@ while True:
         ten = int(input())
         print("plz wait we calcuting")
         print("...")
-
+#a perfect lambda for this code
         score = lambda a, b, c, d, e, f, g, h, i, k: (a + b + c + d + e + f + g + h + i + k) / 10
 
         score2 = (score(first, second, third, four, five, six, seven, eight, nine, ten))
         print(score2)
 
+#if and elifs for buying bike or pizza or nothing
         if score2 > 19:
             print("well done boy , i bought you a big bike for riding in mountains!!!")
         elif score2 == 18 or score2 > 18 and score2 < 20:
@@ -37,7 +41,9 @@ while True:
         else:
             print("wrong , try again")
 
+#and the final play again
         print("do you wanna tell another avarage? (y/n)")
         play_again = input()
         if play_again.lower() != "y":
             break
+#end
