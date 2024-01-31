@@ -1,0 +1,43 @@
+while True:
+        print("tell your first Lesson Score , plz tell that non-decimal ")
+        first = int(input())
+        print("tell your second Lesson Score")
+        second = int(input())
+        print("tell your third Lesson Score")
+        third = int(input())
+        print("tell your four Lesson Score")
+        four = int(input())
+        print("tell your five Lesson Score")
+        five = int(input())
+        print("tell your six Lesson Score")
+        six = int(input())
+        print("tell your seven Lesson Score")
+        seven = int(input())
+        print("tell your eight Lesson Score")
+        eight = int(input())
+        print("tell your nine Lesson Score")
+        nine = int(input())
+        print("tell your ten Lesson Score")
+        ten = int(input())
+        print("plz wait we calcuting")
+        print("...")
+
+        score = lambda a, b, c, d, e, f, g, h, i, k: (a + b + c + d + e + f + g + h + i + k) / 10
+
+        score2 = (score(first, second, third, four, five, six, seven, eight, nine, ten))
+        print(score2)
+
+        if score2 > 19:
+            print("well done boy , i bought you a big bike for riding in mountains!!!")
+        elif score2 == 18 or score2 > 18 and score2 < 20:
+            print("great little man , for your perfect avarage were gonna go to a fast food!!")
+        elif score2 < 18:
+            print("not boy , this is bad , you have to study more to get your prize later !")
+
+        else:
+            print("wrong , try again")
+
+        print("do you wanna tell another avarage? (y/n)")
+        play_again = input()
+        if play_again.lower() != "y":
+            break
