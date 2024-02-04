@@ -1,0 +1,140 @@
+print("welcome to karma service beta version")
+print("we calcute your 3 days of selling")
+item1 = input("tell your first item :")
+item2 = input("tell your second item :")
+item3 = input("tell your third item :")
+
+item1d1 = input(f"how much {item1} do you sell in day 1?")
+item2d1 = input(f"how much {item2} do you sell in day 1?")
+item3d1 = input(f"how much {item3} do you sell in day 1?")
+
+item1d2 = input(f"how much {item1} do you sell in day 2?")
+item2d2 = input(f"how much {item2} do you sell in day 2?")
+item3d2 = input(f"how much {item3} do you sell in day 2?")
+
+item1d3 = input(f"how much {item1} do you sell in day 3?")
+item2d3 = input(f"how much {item2} do you sell in day 3?")
+item3d3 = input(f"how much {item3} do you sell in day 3?")
+
+print(f"{item1} biggest sell in 3 days :")
+if item1d1 == item1d2 == item1d3 :
+    print(f"all 3 days sold {item1}('s) are equal !!!")
+elif item1d1 == item1d2 > item1d3 :
+    print("day 1 and day 2 sold more than day 3")
+elif item1d1 == item1d2 < item1d3 :
+    print(f"day 3 sold more")
+elif item1d1 < item1d2 == item1d3 :
+    print("day 2 and 3 are sold bigger than day 1")
+elif item1d1 > item1d2 == item1d3 :
+    print("day 1 sold more")
+elif item1d1 > item1d2 > item1d3 :
+    print("day 1 sold more")
+elif item1d1 < item1d2 < item1d3 :
+    print("day 3 sold more")
+elif item1d1 > item1d2 < item1d3 :
+    if item1d1 ==  item1d3 :
+        print("day 1 and 3 sold more")
+    elif item1d1 > item1d3 :
+        print("day 1 sold more")
+    elif item1d1 < item1d3 :
+        print("day 3 sold more")
+elif item1d1 < item1d2 > item1d3 :
+    print("day 2 sold more")
+else :
+    print("error , plz try again")
+
+
+
+print(f"{item2} biggest sell in 3 days :")
+
+if item2d1 == item2d2 == item2d3 :
+    print(f"all 3 days sold {item2}('s) are equal !!!")
+elif item2d1 == item2d2 > item2d3 :
+    print("day 1 and day 2 sold more than day 3")
+elif item2d1 == item2d2 < item2d3 :
+    print(f"day 3 sold more")
+elif item2d1 < item2d2 == item2d3 :
+    print("day 2 and 3 are sold bigger than day 1")
+elif item2d1 > item2d2 == item2d3 :
+    print("day 1 sold more")
+elif item2d1 > item2d2 > item2d3 :
+    print("day 1 sold more")
+elif item2d1 < item2d2 < item2d3 :
+    print("day 3 sold more")
+elif item2d1 > item2d2 < item2d3 :
+    if item2d1 ==  item2d3 :
+        print("day 1 and 3 sold more")
+    elif item2d1 > item2d3 :
+        print("day 1 sold more")
+    elif item2d1 < item2d3 :
+        print("day 3 sold more")
+elif item2d1 < item2d2 > item2d3 :
+    print("day 2 sold more")
+else :
+    print("error , plz try again")
+
+
+
+
+print(f"{item3} biggest sell in 3 days :")
+
+if item3d1 == item3d2 == item3d3 :
+    print(f"all 3 days sold {item3}('s) are equal !!!")
+elif item3d1 == item3d2 > item3d3 :
+    print("day 1 and day 2 sold more than day 3")
+elif item3d1 == item3d2 < item3d3 :
+    print(f"day 3 sold more")
+elif item3d1 < item3d2 == item3d3 :
+    print("day 2 and 3 are sold bigger than day 1")
+elif item3d1 > item3d2 == item3d3 :
+    print("day 1 sold more")
+elif item3d1 > item3d2 > item3d3 :
+    print("day 1 sold more")
+elif item3d1 < item3d2 < item3d3 :
+    print("day 3 sold more")
+elif item3d1 > item3d2 < item3d3 :
+    if item3d1 ==  item3d3 :
+        print("day 1 and 3 sold more")
+    elif item3d1 > item3d3 :
+        print("day 1 sold more")
+    elif item3d1 < item3d3 :
+        print("day 3 sold more")
+elif item3d1 < item3d2 > item3d3 :
+    print("day 2 sold more")
+else :
+    print("error , plz try again")
+
+
+print("ranking total number of sold 3 days :")
+
+add1 = item1d1 + item2d1 + item3d1
+add2 = item1d2 + item2d2 + item3d2
+add3 = item1d3 + item2d3 + item3d3
+
+if add1 == add2 == add3 :
+    print("all 3 days sold equal items")
+elif add1 == add2 > add3 :
+    print("day 1 and 2 sold more items")
+elif add1 == add2 < add3 :
+    print("day 3 sold more items")
+elif add1 < add2 == add3 :
+    print("day 2 and 3 sold more items")
+elif add1 > add2 == add3 :
+    print("day 1 sold more items")
+elif add1 > add2 > add3 :
+    print("day 1 sold more items")
+elif add1 < add2 < add3 :
+    print("day 3 sold more items")
+elif add1 < add2 > add3 :
+    print("day 2 sold more items")
+elif add1 > add2 < add3 :
+    if add1 == add3 :
+        print("day 1 and 3 sold more items")
+    elif add1 > add3 :
+        print("day 1 sold more items")
+    elif add1 < add3 :
+        print("day 3 sold more items")
+    else :
+        print("error , try again")
+else :
+    print("error , try again")
