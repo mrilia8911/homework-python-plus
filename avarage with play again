@@ -1,48 +1,26 @@
 #start
 #while for making play again on the last codes
 while True:
-        #some prints and inputs
-        print("tell your first Lesson Score , plz tell that non-decimal ")
-        first = int(input())
-        print("tell your second Lesson Score")
-        second = int(input())
-        print("tell your third Lesson Score")
-        third = int(input())
-        print("tell your four Lesson Score")
-        four = int(input())
-        print("tell your five Lesson Score")
-        five = int(input())
-        print("tell your six Lesson Score")
-        six = int(input())
-        print("tell your seven Lesson Score")
-        seven = int(input())
-        print("tell your eight Lesson Score")
-        eight = int(input())
-        print("tell your nine Lesson Score")
-        nine = int(input())
-        print("tell your ten Lesson Score")
-        ten = int(input())
-        print("plz wait we calcuting")
-        print("...")
-#a perfect lambda for this code
-        score = lambda a, b, c, d, e, f, g, h, i, k: (a + b + c + d + e + f + g + h + i + k) / 10
+        #one for and one list better for a hundrends of inputs
+        score = []
+        for i in range(10) :
+            score.append(int(input("enter your lessons score one by one , non decimal :")))
 
-        score2 = (score(first, second, third, four, five, six, seven, eight, nine, ten))
-        print(score2)
-
+#a ave shampoo for this code(laughing)
+        ave = sum(score) / len(score)
 #if and elifs for buying bike or pizza or nothing
-        if score2 > 19:
+        if ave > 19:
             print("well done boy , i bought you a big bike for riding in mountains!!!")
-        elif score2 == 18 or score2 > 18 and score2 < 20:
-            print("great little man , for your perfect avarage were gonna go to a fast food!!")
-        elif score2 < 18:
+        elif ave == 18 or ave > 18 and ave < 20:
+            print("great little man , for your perfect average were gonna go to a fast food!!")
+        elif ave < 18:
             print("not boy , this is bad , you have to study more to get your prize later !")
 
         else:
             print("wrong , try again")
-
+        print(f"this is your average : {ave}")
 #and the final play again
-        print("do you wanna tell another avarage? (y/n)")
+        print("do you wanna text another average? (y/n)")
         play_again = input()
         if play_again.lower() != "y":
             break
