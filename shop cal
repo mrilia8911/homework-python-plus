@@ -1,4 +1,5 @@
 print("welcome to karma service beta version")
+print("")
 print("we calcute your 3 days of selling")
 item1 = input("tell your first item :")
 item2 = input("tell your second item :")
