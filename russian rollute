@@ -1,0 +1,2660 @@
+import turtle
+import random
+from tkinter import *
+from tkinter import messagebox
+
+tut = turtle.Screen()
+
+tut.bgcolor("white")
+
+tut.title("russian rollute")
+
+
+myPen = turtle.Turtle()
+
+
+myPen.up()
+myPen.setpos(-150,50)
+myPen.down()
+
+
+myPen.color("yellow")
+myPen.fillcolor("yellow")
+myPen.begin_fill()
+
+tut = turtle.Screen()
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+"""
+ /\
+ ||
+first cube
+
+going to second cube
+
+"""
+
+
+myPen.up()
+myPen.setpos(-50,50)
+myPen.down()
+
+
+myPen.color("yellow")
+myPen.fillcolor("yellow")
+myPen.begin_fill()
+
+tut = turtle.Screen()
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+
+"""
+going to third cube
+
+"""
+myPen.up()
+myPen.setpos(50,50)
+myPen.down()
+
+
+myPen.color("yellow")
+myPen.fillcolor("yellow")
+myPen.begin_fill()
+
+tut = turtle.Screen()
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+#fourth cube
+
+myPen.up()
+myPen.setpos(-150,-50)
+myPen.down()
+
+
+myPen.color("yellow")
+myPen.fillcolor("yellow")
+myPen.begin_fill()
+
+tut = turtle.Screen()
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+#fifth cube
+
+myPen.up()
+myPen.setpos(-50,-50)
+myPen.down()
+
+
+myPen.color("yellow")
+myPen.fillcolor("yellow")
+myPen.begin_fill()
+
+tut = turtle.Screen()
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+
+#and the last cube
+
+myPen.up()
+myPen.setpos(50,-50)
+myPen.down()
+
+
+myPen.color("yellow")
+myPen.fillcolor("yellow")
+myPen.begin_fill()
+
+tut = turtle.Screen()
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+
+messagebox.showinfo("tips", "hello! welcome to russian rollute , you have to pick one cube and if its green , it means your safe , and if its red , it means you lost")
+name = tut.textinput("name","enter your name :")
+
+r = random.randint(1,6)
+if name == "god" :
+    print(r)
+
+pick = int(tut.textinput("pick","pick one of the cubes from 1 to 6"))
+if pick > 6 or pick < 1 :
+    print("wrong play again")
+    exit()
+
+if r == 1 :
+    if pick == 2 :
+        myPen.up()
+        myPen.setpos(-50, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 3:
+
+        myPen.up()
+        myPen.setpos(50, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 4:
+
+        myPen.up()
+        myPen.setpos(-150, -50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 5:
+        myPen.up()
+        myPen.setpos(-50, -50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S", "your safe")
+
+    elif pick == 6:
+        myPen.up()
+        myPen.setpos(50, -50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S", "your safe")
+
+    elif pick == 1 :
+        myPen.up()
+        myPen.setpos(-150, 50)
+        myPen.down()
+
+        myPen.color("red")
+        myPen.fillcolor("red")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("D", "your dead")
+        exit()
+
+
+
+
+
+
+
+if r == 2 :
+    if pick == 1 :
+        myPen.up()
+        myPen.setpos(-150, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 3:
+
+        myPen.up()
+        myPen.setpos(50, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 4:
+
+        myPen.up()
+        myPen.setpos(-150, -50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 5:
+        myPen.up()
+        myPen.setpos(-50, -50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S", "your safe")
+
+    elif pick == 6:
+        myPen.up()
+        myPen.setpos(50, -50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S", "your safe")
+
+    elif pick == 2 :
+        myPen.up()
+        myPen.setpos(-50, 50)
+        myPen.down()
+
+        myPen.color("red")
+        myPen.fillcolor("red")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("D", "your dead")
+        exit()
+
+
+
+
+
+
+if r == 3 :
+    if pick == 1 :
+        myPen.up()
+        myPen.setpos(-150, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 2:
+
+        myPen.up()
+        myPen.setpos(-50, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 4:
+
+        myPen.up()
+        myPen.setpos(-150, -50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 5:
+        myPen.up()
+        myPen.setpos(-50, -50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S", "your safe")
+
+    elif pick == 6:
+        myPen.up()
+        myPen.setpos(50, -50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S", "your safe")
+
+    elif pick == 3 :
+        myPen.up()
+        myPen.setpos(50, 50)
+        myPen.down()
+
+        myPen.color("red")
+        myPen.fillcolor("red")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("D", "your dead")
+        exit()
+
+
+
+
+
+
+if r == 4 :
+    if pick == 1 :
+        myPen.up()
+        myPen.setpos(-150, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 2:
+
+        myPen.up()
+        myPen.setpos(-50, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 3:
+
+        myPen.up()
+        myPen.setpos(50, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 5:
+        myPen.up()
+        myPen.setpos(-50, -50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S", "your safe")
+
+    elif pick == 6:
+        myPen.up()
+        myPen.setpos(50, -50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S", "your safe")
+
+    elif pick == 4 :
+        myPen.up()
+        myPen.setpos(-150, -50)
+        myPen.down()
+
+        myPen.color("red")
+        myPen.fillcolor("red")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("D", "your dead")
+        exit()
+
+
+if r == 5 :
+    if pick == 2 :
+        myPen.up()
+        myPen.setpos(-50, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 3:
+
+        myPen.up()
+        myPen.setpos(50, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 4:
+
+        myPen.up()
+        myPen.setpos(-150, -50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 5:
+        myPen.up()
+        myPen.setpos(-50, -50)
+        myPen.down()
+
+        myPen.color("red")
+        myPen.fillcolor("red")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("D", "your dead")
+        exit()
+
+    elif pick == 6:
+        myPen.up()
+        myPen.setpos(50, -50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S", "your safe")
+
+    elif pick == 1 :
+        myPen.up()
+        myPen.setpos(-150, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S", "your safe")
+
+
+
+
+
+if r == 6 :
+    if pick == 2 :
+        myPen.up()
+        myPen.setpos(-50, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 3:
+
+        myPen.up()
+        myPen.setpos(50, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 4:
+
+        myPen.up()
+        myPen.setpos(-150, -50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 5:
+        myPen.up()
+        myPen.setpos(-50, -50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S", "your safe")
+
+    elif pick == 6:
+        myPen.up()
+        myPen.setpos(50, -50)
+        myPen.down()
+
+        myPen.color("red")
+        myPen.fillcolor("red")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("D", "your dead")
+        exit()
+
+    elif pick == 1 :
+        myPen.up()
+        myPen.setpos(-150, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S", "your safe")
+
+
+
+myPen.clear()
+
+
+
+"""
+
+
+
+second round
+
+
+
+
+"""
+
+
+myPen.up()
+myPen.setpos(-150,50)
+myPen.down()
+
+
+myPen.color("yellow")
+myPen.fillcolor("yellow")
+myPen.begin_fill()
+
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+"""
+ /\
+ ||
+first cube
+
+going to second cube
+"""
+
+
+myPen.up()
+myPen.setpos(-50,50)
+myPen.down()
+
+
+myPen.color("yellow")
+myPen.fillcolor("yellow")
+myPen.begin_fill()
+
+tut = turtle.Screen()
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+
+"""
+going to third cube
+"""
+myPen.up()
+myPen.setpos(50,50)
+myPen.down()
+
+
+myPen.color("yellow")
+myPen.fillcolor("yellow")
+myPen.begin_fill()
+
+tut = turtle.Screen()
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+#fourth cube
+
+myPen.up()
+myPen.setpos(-150,-50)
+myPen.down()
+
+
+myPen.color("yellow")
+myPen.fillcolor("yellow")
+myPen.begin_fill()
+
+tut = turtle.Screen()
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+#fifth cube
+
+myPen.up()
+myPen.setpos(-50,-50)
+myPen.down()
+
+
+myPen.color("yellow")
+myPen.fillcolor("yellow")
+myPen.begin_fill()
+
+tut = turtle.Screen()
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+
+#and the last cube
+
+myPen.up()
+myPen.setpos(50,-50)
+myPen.down()
+
+
+myPen.color("green")
+myPen.fillcolor("green")
+myPen.begin_fill()
+
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+
+
+
+r = random.randint(1,5)
+print(r)
+
+pick = int(tut.textinput("pick","pick one of the cubes from 1 to 6"))
+if pick > 5 or pick < 1 :
+    print("wrong play again")
+    exit()
+
+if r == 1 :
+    if pick == 2 :
+        myPen.up()
+        myPen.setpos(-50, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 3:
+
+        myPen.up()
+        myPen.setpos(50, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 4:
+
+        myPen.up()
+        myPen.setpos(-150, -50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 5:
+        myPen.up()
+        myPen.setpos(-50, -50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S", "your safe")
+
+
+    elif pick == 1 :
+        myPen.up()
+        myPen.setpos(-150, 50)
+        myPen.down()
+
+        myPen.color("red")
+        myPen.fillcolor("red")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("D", "your dead")
+        exit()
+
+
+
+
+
+
+if r == 2 :
+    if pick == 1 :
+        myPen.up()
+        myPen.setpos(-150, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 3:
+
+        myPen.up()
+        myPen.setpos(50, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 4:
+
+        myPen.up()
+        myPen.setpos(-150, -50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 5:
+        myPen.up()
+        myPen.setpos(-50, -50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S", "your safe")
+
+
+    elif pick == 2 :
+        myPen.up()
+        myPen.setpos(-50, 50)
+        myPen.down()
+
+        myPen.color("red")
+        myPen.fillcolor("red")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("D", "your dead")
+        exit()
+
+
+
+
+
+
+if r == 3 :
+    if pick == 1 :
+        myPen.up()
+        myPen.setpos(-150, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 2:
+
+        myPen.up()
+        myPen.setpos(-50, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 4:
+
+        myPen.up()
+        myPen.setpos(-150, -50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 5:
+        myPen.up()
+        myPen.setpos(-50, -50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S", "your safe")
+
+    elif pick == 3 :
+        myPen.up()
+        myPen.setpos(50, 50)
+        myPen.down()
+
+        myPen.color("red")
+        myPen.fillcolor("red")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("D", "your dead")
+        exit()
+
+
+
+
+
+
+if r == 4 :
+    if pick == 1 :
+        myPen.up()
+        myPen.setpos(-150, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 2:
+
+        myPen.up()
+        myPen.setpos(-50, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 3:
+
+        myPen.up()
+        myPen.setpos(50, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 5:
+        myPen.up()
+        myPen.setpos(-50, -50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S", "your safe")
+
+    elif pick == 4 :
+        myPen.up()
+        myPen.setpos(-150, -50)
+        myPen.down()
+
+        myPen.color("red")
+        myPen.fillcolor("red")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("D", "your dead")
+        exit()
+
+
+if r == 5 :
+    if pick == 2 :
+        myPen.up()
+        myPen.setpos(-50, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 3:
+
+        myPen.up()
+        myPen.setpos(50, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 4:
+
+        myPen.up()
+        myPen.setpos(-150, -50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 5:
+        myPen.up()
+        myPen.setpos(-50, -50)
+        myPen.down()
+
+        myPen.color("red")
+        myPen.fillcolor("red")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("D", "your dead")
+        exit()
+
+
+    elif pick == 1 :
+        myPen.up()
+        myPen.setpos(-150, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("D", "your dead")
+
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S", "your safe")
+
+
+
+
+"""
+
+
+third round
+
+
+
+"""
+
+myPen.clear()
+
+
+
+
+
+myPen.up()
+myPen.setpos(-150,50)
+myPen.down()
+
+
+myPen.color("yellow")
+myPen.fillcolor("yellow")
+myPen.begin_fill()
+
+tut = turtle.Screen()
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+"""
+ /\
+ ||
+first cube
+
+going to second cube
+"""
+
+
+myPen.up()
+myPen.setpos(-50,50)
+myPen.down()
+
+
+myPen.color("yellow")
+myPen.fillcolor("yellow")
+myPen.begin_fill()
+
+tut = turtle.Screen()
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+
+"""
+going to third cube
+"""
+myPen.up()
+myPen.setpos(50,50)
+myPen.down()
+
+
+myPen.color("yellow")
+myPen.fillcolor("yellow")
+myPen.begin_fill()
+
+tut = turtle.Screen()
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+#fourth cube
+
+myPen.up()
+myPen.setpos(-150,-50)
+myPen.down()
+
+
+myPen.color("yellow")
+myPen.fillcolor("yellow")
+myPen.begin_fill()
+
+tut = turtle.Screen()
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+#fifth cube
+
+myPen.up()
+myPen.setpos(-50,-50)
+myPen.down()
+
+
+myPen.color("green")
+myPen.fillcolor("green")
+myPen.begin_fill()
+
+tut = turtle.Screen()
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+
+#and the last cube
+
+myPen.up()
+myPen.setpos(50,-50)
+myPen.down()
+
+
+myPen.color("green")
+myPen.fillcolor("green")
+myPen.begin_fill()
+
+tut = turtle.Screen()
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+
+
+r = random.randint(1,4)
+print(r)
+
+pick = int(tut.textinput("pick","pick one of the cubes from 1 to 4"))
+if pick > 4 or pick < 1 :
+    print("wrong play again")
+    exit()
+
+if r == 1 :
+    if pick == 2 :
+        myPen.up()
+        myPen.setpos(-50, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 3:
+
+        myPen.up()
+        myPen.setpos(50, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 4:
+
+        myPen.up()
+        myPen.setpos(-150, -50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S", "your safe")
+
+    elif pick == 1 :
+        myPen.up()
+        myPen.setpos(-150, 50)
+        myPen.down()
+
+        myPen.color("red")
+        myPen.fillcolor("red")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("D", "your dead")
+        exit()
+
+
+
+
+
+
+if r == 2 :
+    if pick == 1 :
+        myPen.up()
+        myPen.setpos(-150, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 3:
+
+        myPen.up()
+        myPen.setpos(50, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 4:
+
+        myPen.up()
+        myPen.setpos(-150, -50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S", "your safe")
+
+    elif pick == 2 :
+        myPen.up()
+        myPen.setpos(-50, 50)
+        myPen.down()
+
+        myPen.color("red")
+        myPen.fillcolor("red")
+        myPen.begin_fill()
+
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("D", "your dead")
+        exit()
+
+
+
+
+
+
+if r == 3 :
+    if pick == 1 :
+        myPen.up()
+        myPen.setpos(-150, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 2:
+
+        myPen.up()
+        myPen.setpos(-50, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 4:
+
+        myPen.up()
+        myPen.setpos(-150, -50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 3 :
+        myPen.up()
+        myPen.setpos(50, 50)
+        myPen.down()
+
+        myPen.color("red")
+        myPen.fillcolor("red")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("D", "your dead")
+        exit()
+
+
+
+
+
+
+if r == 4 :
+    if pick == 1 :
+        myPen.up()
+        myPen.setpos(-150, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 2:
+
+        myPen.up()
+        myPen.setpos(-50, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 3:
+
+        myPen.up()
+        myPen.setpos(50, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 4 :
+        myPen.up()
+        myPen.setpos(-150, -50)
+        myPen.down()
+
+        myPen.color("red")
+        myPen.fillcolor("red")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("D", "your dead")
+        exit()
+
+
+myPen.clear()
+
+
+
+
+"""
+
+
+
+round 4
+
+
+
+
+
+"""
+
+
+
+
+myPen.up()
+myPen.setpos(-150,50)
+myPen.down()
+
+
+myPen.color("yellow")
+myPen.fillcolor("yellow")
+myPen.begin_fill()
+
+tut = turtle.Screen()
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+"""
+ /\
+ ||
+first cube
+
+going to second cube
+"""
+
+
+myPen.up()
+myPen.setpos(-50,50)
+myPen.down()
+
+
+myPen.color("yellow")
+myPen.fillcolor("yellow")
+myPen.begin_fill()
+
+tut = turtle.Screen()
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+
+"""
+going to third cube
+"""
+myPen.up()
+myPen.setpos(50,50)
+myPen.down()
+
+
+myPen.color("yellow")
+myPen.fillcolor("yellow")
+myPen.begin_fill()
+
+tut = turtle.Screen()
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+#fourth cube
+
+myPen.up()
+myPen.setpos(-150,-50)
+myPen.down()
+
+
+myPen.color("green")
+myPen.fillcolor("green")
+myPen.begin_fill()
+
+tut = turtle.Screen()
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+#fifth cube
+
+myPen.up()
+myPen.setpos(-50,-50)
+myPen.down()
+
+
+myPen.color("green")
+myPen.fillcolor("green")
+myPen.begin_fill()
+
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+
+#and the last cube
+
+myPen.up()
+myPen.setpos(50,-50)
+myPen.down()
+
+
+myPen.color("green")
+myPen.fillcolor("green")
+myPen.begin_fill()
+
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+
+
+
+r = random.randint(1,3)
+print(r)
+
+pick = int(tut.textinput("pick","pick one of the cubes from 1 to 3"))
+if pick > 3 or pick < 1 :
+    print("wrong play again")
+    exit()
+
+if r == 1 :
+    if pick == 2 :
+        myPen.up()
+        myPen.setpos(-50, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 3:
+
+        myPen.up()
+        myPen.setpos(50, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 1 :
+        myPen.up()
+        myPen.setpos(-150, 50)
+        myPen.down()
+
+        myPen.color("red")
+        myPen.fillcolor("red")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("D", "your dead")
+        exit()
+
+
+
+
+
+
+if r == 2 :
+    if pick == 1 :
+        myPen.up()
+        myPen.setpos(-150, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 3:
+
+        myPen.up()
+        myPen.setpos(50, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 2 :
+        myPen.up()
+        myPen.setpos(-50, 50)
+        myPen.down()
+
+        myPen.color("red")
+        myPen.fillcolor("red")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("D", "your dead")
+        exit()
+
+
+
+
+
+
+if r == 3 :
+    if pick == 1 :
+        myPen.up()
+        myPen.setpos(-150, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 2:
+
+        myPen.up()
+        myPen.setpos(-50, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 3 :
+        myPen.up()
+        myPen.setpos(50, 50)
+        myPen.down()
+
+        myPen.color("red")
+        myPen.fillcolor("red")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("D", "your dead")
+        exit()
+
+myPen.clear()
+
+
+
+"""
+
+
+
+round 5
+
+
+
+
+"""
+
+
+myPen.up()
+myPen.setpos(-150,50)
+myPen.down()
+
+
+myPen.color("yellow")
+myPen.fillcolor("yellow")
+myPen.begin_fill()
+
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+"""
+ /\
+ ||
+first cube
+
+going to second cube
+"""
+
+
+myPen.up()
+myPen.setpos(-50,50)
+myPen.down()
+
+
+myPen.color("yellow")
+myPen.fillcolor("yellow")
+myPen.begin_fill()
+
+tut = turtle.Screen()
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+
+"""
+going to third cube
+"""
+myPen.up()
+myPen.setpos(50,50)
+myPen.down()
+
+
+myPen.color("green")
+myPen.fillcolor("green")
+myPen.begin_fill()
+
+tut = turtle.Screen()
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+#fourth cube
+
+myPen.up()
+myPen.setpos(-150,-50)
+myPen.down()
+
+
+myPen.color("green")
+myPen.fillcolor("green")
+myPen.begin_fill()
+
+tut = turtle.Screen()
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+#fifth cube
+
+myPen.up()
+myPen.setpos(-50,-50)
+myPen.down()
+
+
+myPen.color("green")
+myPen.fillcolor("green")
+myPen.begin_fill()
+
+tut = turtle.Screen()
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+
+#and the last cube
+
+myPen.up()
+myPen.setpos(50,-50)
+myPen.down()
+
+
+myPen.color("green")
+myPen.fillcolor("green")
+myPen.begin_fill()
+
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+
+
+
+r = random.randint(1,2)
+print(r)
+
+pick = int(tut.textinput("pick","pick one of the cubes from 1 to 6"))
+if pick > 2 or pick < 1 :
+    print("wrong play again")
+    exit()
+
+if r == 1 :
+    if pick == 2 :
+        myPen.up()
+        myPen.setpos(-50, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 1 :
+        myPen.up()
+        myPen.setpos(-150, 50)
+        myPen.down()
+
+        myPen.color("red")
+        myPen.fillcolor("red")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("D", "your dead")
+        exit()
+
+
+
+
+
+
+if r == 2 :
+    if pick == 1 :
+        myPen.up()
+        myPen.setpos(-150, 50)
+        myPen.down()
+
+        myPen.color("green")
+        myPen.fillcolor("green")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("S","your safe")
+
+    elif pick == 2 :
+        myPen.up()
+        myPen.setpos(-50, 50)
+        myPen.down()
+
+        myPen.color("red")
+        myPen.fillcolor("red")
+        myPen.begin_fill()
+
+        tut = turtle.Screen()
+
+        for i in range(4):
+            myPen.forward(50)
+            myPen.left(90)
+
+        myPen.end_fill()
+        messagebox.showinfo("D", "your dead")
+        exit()
+
+"""
+
+
+round 6
+
+
+
+"""
+
+myPen.clear()
+
+
+
+
+
+myPen.up()
+myPen.setpos(-150,50)
+myPen.down()
+
+
+myPen.color("red")
+myPen.fillcolor("red")
+myPen.begin_fill()
+
+tut = turtle.Screen()
+
+
+
+for i in range(4) :
+    myPen.forward(50)
+    myPen.left(90)
+
+
+myPen.end_fill()
+
+messagebox.showinfo("error", "how did you get to this round?")
+messagebox.showinfo("error", "you lost at the round 6 but your the luckiest man in the world")
+exit()
